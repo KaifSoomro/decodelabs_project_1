@@ -1,0 +1,122 @@
+/* Tablet + Mobile */
+@media (max-width: 768px) {
+  .nav_container {
+    height: 60px;
+    padding: 0px 15px 0px 15px;
+  }
+
+  .nav_logo {
+    font-size: 12px;
+    gap: 8px;
+  }
+
+  .nav_container .nav_logo img {
+    width: 29px;
+  }
+
+  .nav_btns {
+    display: none;
+  }
+
+  .tabs {
+    display: none;
+  }
+
+  .mobile_menu {
+    display: block;
+  }
+
+  .top_image_blur {
+    display: none;
+  }
+
+  .hero {
+    margin-top: 153px;
+    padding: 0 15px;
+  }
+
+  .hero_cta {
+    margin-top: 46px;
+    gap: 10px;
+    margin-bottom: 70px;
+  }
+
+  .hero .hero_img {
+    width: 375px;
+    bottom: 18%;
+  }
+
+  .hero .hero_content h1 {
+    font-size: 40px;
+  }
+
+  .hero_cta .cta_content input {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 18px;
+  }
+
+  .hero_cta button {
+    width: 120px;
+    height: 45px;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .hero_cta .cta_content input {
+    height: 25px;
+    font-size: 14px;
+  }
+
+  .hero_cta .cta_content select {
+    font-size: 14px;
+  }
+
+  .popular {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .popular .popular_card_grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 0;
+    padding-top: 30px;
+    place-content: center;
+  }
+
+  .popular .popular_card_grid .popular_card h1 {
+    font-size: 20px;
+  }
+
+  .popular h1 {
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+  .laptop_content {
+    padding-top: 20px;
+  }
+
+  .laptop_section {
+    margin-top: 74px;
+    height: auto;
+    padding: 0px 15px;
+    flex-direction: column-reverse;
+  }
+
+  .laptop_content {
+    padding-top: 50px;
+  }
+
+
+  .laptop_img {
+    margin-top: 70px;
+  }
+
+  .laptop_section img {
+    width: 319px;
+  }
+}
