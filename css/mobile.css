@@ -1,17 +1,23 @@
-/* Tablet + Mobile */
+
+
 @media (max-width: 768px) {
+  .header_container {
+    padding: 10px 15px;
+  }
+
   .nav_container {
     height: 60px;
-    padding: 0px 15px 0px 15px;
+    padding: 0px 20px;
+    border-radius: 14px;
   }
 
-  .nav_logo {
-    font-size: 12px;
-    gap: 8px;
+  .nav_logo h1 {
+    font-size: 18px;
   }
 
-  .nav_container .nav_logo img {
-    width: 29px;
+  .nav_logo img {
+    width: 28px;
+    height: 28px;
   }
 
   .nav_btns {
@@ -27,96 +33,75 @@
   }
 
   .top_image_blur {
-    display: none;
+    width: 100%;
+    opacity: 0.15;
   }
 
   .hero {
-    margin-top: 153px;
-    padding: 0 15px;
-  }
-
-  .hero_cta {
-    margin-top: 46px;
-    gap: 10px;
-    margin-bottom: 70px;
-  }
-
-  .hero .hero_img {
-    width: 375px;
-    bottom: 18%;
+    margin-top: 100px;
+    padding: 40px 15px 60px;
   }
 
   .hero .hero_content h1 {
-    font-size: 40px;
+    font-size: 44px;
+    letter-spacing: -1.5px;
   }
 
-  .hero_cta .cta_content input {
+  .hero .hero_img {
     width: 100%;
-    height: 40px;
-    padding-left: 10px;
-    font-size: 18px;
+    max-width: 480px;
+    bottom: -5%;
   }
 
-  .hero_cta button {
-    width: 120px;
-    height: 45px;
-    font-size: 12px;
-    padding: 0 10px;
+  .hero_cta {
+    margin-top: 35px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero_cta .cta_content {
+    width: 90%;
+    padding: 6px 15px;
   }
 
   .hero_cta .cta_content input {
-    height: 25px;
-    font-size: 14px;
+    height: 38px;
+    font-size: 15px;
   }
 
   .hero_cta .cta_content select {
-    font-size: 14px;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-  .popular {
-    width: 100%;
-    height: auto;
-    padding: 20px;
+  .hero_cta button {
+    width: 90%;
+    height: 52px;
+    border-radius: 14px;
+    font-size: 15px;
   }
 
-  .popular .popular_card_grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    padding: 0;
-    padding-top: 30px;
-    place-content: center;
+  .trust_stats {
+    padding: 0 15px;
+    margin-bottom: 60px;
   }
 
-  .popular .popular_card_grid .popular_card h1 {
-    font-size: 20px;
+  .stats_container {
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px 20px;
+    align-items: center;
   }
 
-  .popular h1 {
-    font-size: 30px;
-    font-weight: 800;
+  .stat_number {
+    font-size: 36px;
   }
+}
 
-  .laptop_content {
-    padding-top: 20px;
-  }
-
-  .laptop_section {
-    margin-top: 74px;
-    height: auto;
-    padding: 0px 15px;
-    flex-direction: column-reverse;
-  }
-
-  .laptop_content {
-    padding-top: 50px;
-  }
-
-
-  .laptop_img {
-    margin-top: 70px;
-  }
-
-  .laptop_section img {
-    width: 319px;
+/* Widescreen tweaks (min-width: 1440px) */
+@media (min-width: 1440px) {
+  .hero .hero_content h1 {
+    font-size: 96px;
   }
 }
