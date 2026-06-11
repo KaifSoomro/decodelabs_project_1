@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --primary: #999bf2;
+  --secondary: #cfff02;
+  --text-primary: #230f61;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+/* Navbar */
+
+.nav_container {
+  width: 100%;
+  height: 70px;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 90px 0px 90px;
+  backdrop-filter: blur(10px);
+}
+
+.nav_container .nav_logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav_container .nav_logo img {
+  width: 40px;
+}
+
+.nav_btns {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav_select {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.login_btn {
+  padding: 11px 20px 11px 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--text-primary);
+  background-color: transparent;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.login_btn:hover {
+  background-color: var(--text-primary);
+  color: white;
+}
+
+/* hero section */
+.hero {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.hero .hero_img {
+  position: absolute;
+  z-index: -1;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 750px;
+}
+
+.top_image_blur {
+  position: absolute;
+  top: -20%;
+  left: -8%;
+  width: 550px;
+  filter: blur(40px);
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.hero .hero_content h1 {
+  font-size: 115px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.hero_cta {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 150px;
+}
+
+.hero_cta .cta_content {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hero_cta .cta_content input {
+  width: 800px;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+.hero_cta .cta_content select {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding-right: 10px;
+    width: 100px;
+}
+
+.hero_cta button {
+    background-color: var(--secondary);
+    color: black;
+    width: 150px;
+    height: 58px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.popular {
+    width: 1500px;
+    height: 450px;
+    background: #000;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: rgba(153, 155, 242, 0.2);
+    backdrop-filter: blur(50px);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 1);
+    padding: 30px;
+}
+
+.popular h1 {
+    text-align: center;
+    font-size: 47px;
+    font-weight: 900;
+    color: var(--text-primary);
+}
+
+.popular .popular_card_grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 0 70px;
+    padding-top: 45px;
+}
+
+.popular .popular_card_grid .popular_card {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    font-size: 20px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.popular .popular_card_grid .popular_card:hover {
+    transform: scale(1.04);
+    transition: ease-in-out 0.2s;
+}
+
+.popular .popular_card_grid .popular_card h1 {
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.all_vacan_btn {
+    color: var(--text-primary);
+    text-align: end; 
+    margin-top: 25px;
+    margin-right: 70px;
+    cursor: pointer;
+}
