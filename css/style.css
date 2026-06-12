@@ -396,7 +396,6 @@ body {
   transform: translateY(0) scale(1);
 }
 
-/* Trust Stats & Logo Marquee Section */
 .trust_stats {
   max-width: 1400px;
   margin: 40px auto 100px;

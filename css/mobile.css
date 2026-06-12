@@ -108,9 +108,7 @@
   }
 
   .hero_cta .cta_content select {
-    font-size: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
+    display: none;
   }
 
   .hero_cta button {
