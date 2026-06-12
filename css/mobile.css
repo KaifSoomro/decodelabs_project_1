@@ -1,5 +1,43 @@
 
+@media (max-width: 1024px) {
+  .hero .hero_content h1 {
+    font-size: 60px;
+    letter-spacing: -2px;
+  }
+  
+  .hero .hero_img {
+    width: 700px;
+  }
+  
+  .popular .popular_card_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .jobs_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .steps_grid {
+    gap: 20px;
+  }
+  
+  .testimonials_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .testimonials_grid .testimonial_card:last-child {
+    grid-column: span 2;
+  }
 
+  .footer_container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+/* Medium & Small Tablets (max-width: 768px) { */
 @media (max-width: 768px) {
   .header_container {
     padding: 10px 15px;
@@ -60,7 +98,7 @@
   }
 
   .hero_cta .cta_content {
-    width: 90%;
+    width: 100%;
     padding: 6px 15px;
   }
 
@@ -76,7 +114,7 @@
   }
 
   .hero_cta button {
-    width: 90%;
+    width: 100%;
     height: 52px;
     border-radius: 14px;
     font-size: 15px;
@@ -96,6 +134,167 @@
 
   .stat_number {
     font-size: 36px;
+  }
+
+  .popular {
+    width: 100%;
+    padding: 40px 20px;
+    margin-bottom: 80px;
+    border-radius: 20px;
+  }
+
+  .popular h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .popular .popular_card_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .popular .popular_card_grid .popular_card {
+    padding: 20px 15px;
+    border-radius: 14px;
+  }
+
+  .popular .popular_card_grid .popular_card h1 {
+    font-size: 18px;
+  }
+
+  .featured_jobs {
+    padding: 0 15px;
+    margin-bottom: 80px;
+  }
+
+  .section_header {
+    margin-bottom: 35px;
+  }
+
+  .section_header h2 {
+    font-size: 30px;
+  }
+
+  .section_header p {
+    font-size: 15px;
+  }
+
+  .jobs_grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .job_card {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .how_it_works {
+    padding: 0 15px;
+    margin-bottom: 80px;
+  }
+
+  .steps_grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .step_card {
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+
+  .step_num {
+    font-size: 50px;
+    margin-bottom: 8px;
+  }
+
+  .step_card h3 {
+    font-size: 20px;
+  }
+
+  .laptop_section {
+    height: auto;
+    padding: 50px 20px;
+    margin-bottom: 80px;
+    flex-direction: column-reverse;
+    gap: 40px;
+    border-radius: 24px;
+    text-align: center;
+  }
+
+  .laptop_section .laptop_content {
+    padding-top: 0;
+  }
+
+  .laptop_section .laptop_content h1 {
+    font-size: 32px;
+  }
+
+  .laptop_section .laptop_content p {
+    font-size: 15px;
+    margin: 15px 0 25px;
+  }
+
+  .laptop_section .laptop_content button {
+    width: 100%;
+    padding: 14px 28px;
+  }
+
+  .laptop_section img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Testimonials */
+  .testimonials {
+    padding: 0 15px;
+    margin-bottom: 80px;
+  }
+
+  .testimonials_grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .testimonials_grid .testimonial_card:last-child {
+    grid-column: span 1;
+  }
+
+  .testimonial_card {
+    padding: 25px 20px;
+    border-radius: 20px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 60px 20px 30px;
+  }
+
+  .footer_container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .newsletter_form {
+    flex-direction: column;
+  }
+
+  .newsletter_form input,
+  .newsletter_form button {
+    width: 100%;
+  }
+
+  .footer_bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer_bottom_links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
   }
 }
 
