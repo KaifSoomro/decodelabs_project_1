@@ -98,7 +98,7 @@
   }
 
   .hero_cta .cta_content {
-    width: 100%;
+    width: 95%;
     padding: 6px 15px;
   }
 
@@ -114,7 +114,7 @@
   }
 
   .hero_cta button {
-    width: 100%;
+    width: 95%;
     height: 52px;
     border-radius: 14px;
     font-size: 15px;
